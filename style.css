@@ -17,7 +17,7 @@ main {
 }
 
 .container {
-    width: 1164px;
+    width: 1050px;
 }
 
 
@@ -25,14 +25,20 @@ main {
 
 header {
     background: #2D25A0;
-    width: 1440px;
+    width: 1346px;
     height: 677px;
 }
 
+.banner-all-img {
+    margin-right: 0;
+}
+
+.banner-info {
+    width: 50%;
+}
+
 .banner {
-    width: 1164px;
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .banner-title {
@@ -48,6 +54,9 @@ header {
     color: #ffffff;
     margin-bottom: 10px;
 }
+
+
+/* button start */
 
 .button {
     display: flex;
@@ -74,9 +83,86 @@ header {
     padding-left: 8px;
 }
 
+
+/* Button */
+
+
+/* banner image */
+
+.banner-all-img {
+    display: flex;
+}
+
 .banner-img {
     padding-top: 135px;
+    margin-right: 140px;
+}
+
+.ball {
+    margin-top: 212px;
+    padding-left: 20px;
+}
+
+.ball:hover {
+    transform: scale(2) rotate(360deg);
+    transition: transform 3s ease-in-out;
+}
+
+.btn-title a p:hover {
+    background-color: rgb(238, 147, 10);
+    transition: .3s ease-in-out;
 }
 
 
-/* Button */
+/* players  */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    margin-top: 70px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-img img {
+    width: 100%;
+}
+
+
+/* ranking part */
+
+.rankigs {
+    display: flex;
+    margin-top: 20px;
+}
+
+.man-ranking-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.ranking-heading {
+    padding-right: 50px;
+}
+
+.man-rankings {
+    margin-right: 50px;
+}
+
+.man-ranking {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.country-flag p {
+    margin-top: 0px;
+}
